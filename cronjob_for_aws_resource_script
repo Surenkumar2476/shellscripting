@@ -1,0 +1,14 @@
+#Open the cron table for editing:
+crontab -e
+
+#Add a new cron job entry:
+0 18 * * * /home/ubuntu/aws_resource_tracker.sh
+
+# 0 (minute): At minute 0.
+# 18 (hour): At 18 hours, which is 6 PM.
+# * (day of month): Every day of the month.
+# * (month): Every month.
+# * (day of week): Every day of the week.
+
+#Verifying the Cron Job
+crontab -l
